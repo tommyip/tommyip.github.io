@@ -1,11 +1,47 @@
+/* I love Roboto!! */
+
 body {
     font-family: 'Roboto', sans-serif;
+    color: #212121;
 }
 
-h1 {
+.name {
+    background: #eee;
+    font-size: 4.5em;
     font-weight: 100;
 }
 
-h2, h3, h4, h5, h6, p {
-    font-weight: 300;
+.name-plate {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@supports (mix-blend-mode: lighten) {
+    .name-plate .name {
+        display: inline-block;
+        position: relative;
+        color: #000;
+        background: #fff;
+        mix-blend-mode: multiply;
+    }
+
+    .name-plate .name::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: -webkit-linear-gradient(right, #642B73, #C6426E);
+        background:    -moz-linear-gradient(right, #642B73, #C6426E);
+        background:     -ms-linear-gradient(right, #642B73, #C6426E);
+        background:      -o-linear-gradient(right, #642B73, #C6426E);
+        background:         linear-gradient(to right, #642B73, #C6426E);
+        pointer-events: none;
+        mix-blend-mode: screen;
+    }
 }
