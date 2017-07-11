@@ -2,25 +2,62 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: #222;
+    font-size: 1em;
+    font-weight: 300;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.name {
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+b {
+    font-weight: 500;
+}
+
+#nav-projects {
+    padding: 0 1.5em;
+}
+
+#name {
     background: #eee;
-    font-size: 4.5em;
+    font-size: 4em;
     font-weight: 100;
 }
 
-.name-plate {
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+#description {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#section-header {
+    padding: 2em 2em 1em 2em;
+}
+
+#section-navbar {
+    color: #fff;
+    background-image: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%);
+    padding: 1em 2em;
+    font-weight: 300;
+}
+
+#section-content-tag {
+    padding: 2em 2em 1em 2em;
+}
+
+#content-tag {
+    padding: 0.3em 0.4em;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
 }
 
 @supports (mix-blend-mode: lighten) {
-    .name-plate .name {
+    #name {
         display: inline-block;
         position: relative;
         color: #000;
@@ -28,7 +65,7 @@ body {
         mix-blend-mode: multiply;
     }
 
-    .name-plate .name::before {
+    #name::before {
         content: '';
         display: block;
         position: absolute;
@@ -36,11 +73,12 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background: -webkit-linear-gradient(right, #642B73, #C6426E);
-        background:    -moz-linear-gradient(right, #642B73, #C6426E);
-        background:     -ms-linear-gradient(right, #642B73, #C6426E);
-        background:      -o-linear-gradient(right, #642B73, #C6426E);
-        background:         linear-gradient(to right, #642B73, #C6426E);
+
+        background: -webkit-linear-gradient(135deg, #623AA2, #F97794);
+        background:    -moz-linear-gradient(135deg, #623AA2, #F97794);
+        background:     -ms-linear-gradient(135deg, #623AA2, #F97794);
+        background:      -o-linear-gradient(135deg, #623AA2, #F97794);
+        background:         linear-gradient(135deg, #623AA2, #F97794);
         pointer-events: none;
         mix-blend-mode: screen;
     }
