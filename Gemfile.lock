@@ -57,6 +57,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-paginate
   json
+  rouge
 
 BUNDLED WITH
    1.11.2

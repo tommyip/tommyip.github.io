@@ -8,6 +8,7 @@ github_username: tommyip
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-gist
