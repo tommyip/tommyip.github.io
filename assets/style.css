@@ -1,10 +1,9 @@
-/* I love Roboto!! */
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #222;
     font-size: 1em;
     font-weight: 300;
+    padding-bottom: 2em;
 
     overflow-y: scroll;
     overflow-x: hidden;
@@ -12,14 +11,20 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #0E5CAD
 }
 
 b {
     font-weight: 500;
 }
 
+.side-padded {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 #nav-projects {
+    /* TODO: Make each nav link equal */
     padding: 0 1.5em;
 }
 
@@ -35,18 +40,28 @@ b {
 }
 
 #section-header {
-    padding: 2em 2em 1em 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 #section-navbar {
     color: #fff;
-    background-image: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%);
-    padding: 1em 2em;
     font-weight: 300;
+    background: -webkit-linear-gradient(135deg, #79F1A4, #0E5CAD);
+    background:    -moz-linear-gradient(135deg, #79F1A4, #0E5CAD);
+    background:     -ms-linear-gradient(135deg, #79F1A4, #0E5CAD);
+    background:      -o-linear-gradient(135deg, #79F1A4, #0E5CAD);
+    background:         linear-gradient(135deg, #79F1A4, #0E5CAD);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#section-navbar a {
+    color: #fff;
 }
 
 #section-content-tag {
-    padding: 2em 2em 1em 2em;
+    padding: 2em;
 }
 
 #content-tag {
@@ -54,6 +69,18 @@ b {
     background-color: #000;
     color: #fff;
     font-weight: 500;
+}
+
+#post-title {
+    font-size: 2em;
+}
+
+#post-date {
+    color: #555;
+}
+
+#post-content {
+    font-size: 1em;
 }
 
 @supports (mix-blend-mode: lighten) {
