@@ -60,6 +60,11 @@ b {
     color: #fff;
 }
 
+#section-footer {
+    color: #555;
+    line-height: 40%;
+}
+
 #section-content-tag {
     padding: 2em;
 }
