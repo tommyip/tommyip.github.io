@@ -18,6 +18,12 @@ b {
     font-weight: 500;
 }
 
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 75%;
+}
+
 .side-padded {
     padding-left: 2em;
     padding-right: 2em;
@@ -52,8 +58,7 @@ b {
     background:     -ms-linear-gradient(135deg, #79F1A4, #0E5CAD);
     background:      -o-linear-gradient(135deg, #79F1A4, #0E5CAD);
     background:         linear-gradient(135deg, #79F1A4, #0E5CAD);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 2em;
 }
 
 #section-navbar a {
@@ -66,7 +71,7 @@ b {
 }
 
 #section-content-tag {
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
 }
 
 #content-tag {
@@ -74,10 +79,6 @@ b {
     background-color: #000;
     color: #fff;
     font-weight: 500;
-}
-
-#post-title {
-    font-size: 2em;
 }
 
 #post-date {
