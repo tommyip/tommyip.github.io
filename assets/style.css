@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: #222;
+    color: #333;
     font-size: 1em;
     font-weight: 300;
     padding-bottom: 2em;
@@ -23,9 +23,20 @@ h1 {
     line-height: 75%;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+}
+
 .side-padded {
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.p {
+    line-height: 150%;
+    padding: 1em 0;
 }
 
 #nav-projects {
@@ -44,24 +55,24 @@ h1 {
     font-weight: 300;
 }
 
+#nav {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#nav a {
+    color: inherit;
+}
+
 #section-header {
     padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#section-about {
+    padding-top: 1em;
     padding-bottom: 1em;
-}
-
-#section-navbar {
-    color: #fff;
-    font-weight: 300;
-    background: -webkit-linear-gradient(135deg, #79F1A4, #0E5CAD);
-    background:    -moz-linear-gradient(135deg, #79F1A4, #0E5CAD);
-    background:     -ms-linear-gradient(135deg, #79F1A4, #0E5CAD);
-    background:      -o-linear-gradient(135deg, #79F1A4, #0E5CAD);
-    background:         linear-gradient(135deg, #79F1A4, #0E5CAD);
-    padding: 1em 2em;
-}
-
-#section-navbar a {
-    color: #fff;
 }
 
 #section-footer {
@@ -70,12 +81,12 @@ h1 {
 }
 
 #section-content-tag {
-    padding: 2em 2em 1em 2em;
+    padding: 2em 2em 0 2em;
 }
 
 #content-tag {
     padding: 0.3em 0.4em;
-    background-color: #000;
+    background-color: #111;
     color: #fff;
     font-weight: 500;
 }
