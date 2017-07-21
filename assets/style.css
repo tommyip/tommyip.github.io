@@ -21,6 +21,10 @@ b {
     font-weight: 500;
 }
 
+p {
+    line-height: 140%;
+}
+
 h1 {
     font-size: 2em;
     font-weight: 500;
@@ -83,7 +87,7 @@ hr {
 }
 
 #section-content-tag {
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 0.5em 2em;
 }
 
 #content-tag {
