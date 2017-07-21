@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
 a {
     text-decoration: none;
     color: #0E5CAD
@@ -29,14 +33,13 @@ hr {
     background-color: #eee;
 }
 
+.grey {
+    color: #555;
+}
+
 .side-padded {
     padding-left: 2em;
     padding-right: 2em;
-}
-
-.p {
-    line-height: 150%;
-    padding: 1em 0;
 }
 
 #nav-projects {
@@ -46,8 +49,12 @@ hr {
 
 #name {
     background: #eee;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 100;
+}
+
+#name > a {
+    color: initial;
 }
 
 #description {
@@ -61,23 +68,18 @@ hr {
     font-weight: 100;
 }
 
-#nav a {
-    color: inherit;
+#nav > a {
+    color: #333;
 }
 
 #section-header {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #section-about {
     padding-top: 1em;
     padding-bottom: 1em;
-}
-
-#section-footer {
-    color: #555;
-    line-height: 40%;
 }
 
 #section-content-tag {
@@ -89,14 +91,6 @@ hr {
     background-color: #111;
     color: #fff;
     font-weight: 500;
-}
-
-#post-date {
-    color: #555;
-}
-
-#post-content {
-    font-size: 1em;
 }
 
 @supports (mix-blend-mode: lighten) {

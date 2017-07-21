@@ -7,13 +7,13 @@ tag: BLOG
   <div class="col-xs-offset-0 col-sm-offset-1 col-xs-12 col-md-10">
     <div class="box">
       <h1>{{ page.title | escape }}</h1>
-      <p id="post-date"><i>Written on {{ page.date | date: "%-d %B %Y" }}</i></p>
+      <p class="grey"><i>Written on {{ page.date | date: "%-d %B %Y" }}</i></p>
     </div>
   </div>
 </div>
 <div class="row side-padded">
   <div class="col-xs-offset-0 col-sm-offset-1 col-xs-12 col-md-10">
-    <div class="box" id="post-content">
+    <div class="box">
       {{ content }}
     </div>
   </div>
