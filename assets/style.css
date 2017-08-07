@@ -10,6 +10,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    margin-top: 0;
 }
 
 a {
@@ -46,9 +47,8 @@ hr {
     padding-right: 2em;
 }
 
-#nav-projects {
-    /* TODO: Make each nav link equal */
-    padding: 0 1.5em;
+.blank-row {
+    height: 0.5em;
 }
 
 #name {
@@ -86,8 +86,12 @@ hr {
     padding-bottom: 1em;
 }
 
+#section-blog {
+    font-size: 1.2em;
+}
+
 #section-content-tag {
-    padding: 2em 2em 0.5em 2em;
+    padding: 2em;
 }
 
 #content-tag {
