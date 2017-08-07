@@ -51,6 +51,10 @@ hr {
     height: 0.5em;
 }
 
+.blog-listing-description {
+    font-size: 0.9em;
+}
+
 #name {
     background: #eee;
     font-size: 3.5em;
@@ -99,6 +103,10 @@ hr {
     background-color: #111;
     color: #fff;
     font-weight: 500;
+}
+
+#blog-listing {
+    border: 0;
 }
 
 @supports (mix-blend-mode: lighten) {
