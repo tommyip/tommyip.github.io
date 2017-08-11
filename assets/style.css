@@ -55,6 +55,12 @@ hr {
     font-size: 0.9em;
 }
 
+#header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
 #name {
     background: #eee;
     font-size: 3em;
@@ -65,19 +71,17 @@ hr {
     color: initial;
 }
 
+#blog-link {
+    font-size: 1.2em;
+    font-weight: 100;
+
+    margin-left: auto;
+    color: #333;
+}
+
 #description {
     font-size: 1.4em;
     font-weight: 300;
-}
-
-#nav {
-    text-align: right;
-    font-size: 1.2em;
-    font-weight: 100;
-}
-
-#nav > a {
-    color: #333;
 }
 
 #section-header {
