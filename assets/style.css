@@ -10,7 +10,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
-    margin-top: 0;
 }
 
 a {
@@ -26,12 +25,6 @@ p {
     line-height: 140%;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 75%;
-}
-
 hr {
     border: none;
     height: 1px;
@@ -42,29 +35,28 @@ hr {
     color: #555;
 }
 
-.side-padded {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.blank-row {
-    height: 0.5em;
-}
-
-.blog-listing-description {
+.small {
+    color: #555;
     font-size: 0.9em;
 }
 
-#header {
+.side-padded {
+    padding: 0 2em;
+}
+
+/* Header */
+
+#header .box {
     display: flex;
+    font-weight: 100;
     width: 100%;
     align-items: center;
+    padding: 0.5em 0;
 }
 
 #name {
     background: #eee;
     font-size: 3em;
-    font-weight: 100;
 }
 
 #name > a {
@@ -73,46 +65,39 @@ hr {
 
 #blog-link {
     font-size: 1.2em;
-    font-weight: 100;
 
     margin-left: auto;
     color: #333;
 }
 
-#description {
-    font-size: 1.4em;
-    font-weight: 300;
+/* Blog */
+
+#blog table {
+    border: 0;
 }
 
-#section-header {
-    padding-top: 1em;
-    padding-bottom: 1em;
+#blog table .description {
+    font-size: 0.9em;
 }
 
-#section-about {
-    padding-top: 1em;
-    padding-bottom: 1em;
+.blank-row {
+    height: 0.5em;
 }
 
-#section-blog {
-    font-size: 1.2em;
-}
+/* Content tag */
 
 #content-tag {
-    padding: 2em;
+    padding: 1em 2em;
 }
 
 #content-tag span {
-    padding: 0.3em 0.4em;
+    padding: 0.4em;
     background-color: #111;
     color: #fff;
     font-weight: 500;
 }
 
-#blog-listing {
-    border: 0;
-}
-
+/* Main "Tommy Ip" header */
 @supports (mix-blend-mode: lighten) {
     #name {
         display: inline-block;

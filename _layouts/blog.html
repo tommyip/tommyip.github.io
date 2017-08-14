@@ -5,13 +5,13 @@ permalink: /blog/
 
 {% include content_tag.html tag="blog" %}
 
-<div class="row side-padded" id="section-blog">
+<section class="row side-padded" id="blog">
   <div class="col-xs-0 col-md-2"></div>
   <div class="col-xs-12 col-md-8">
     <div class="box">
-      <table id="blog-listing">
+      <table>
         {% for post in site.posts %}
-          <tr id="blog-item">
+          <tr id="item">
             <td class="grey">{{ post.date | date_to_string }}</td>
             <td>
               <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
@@ -19,7 +19,7 @@ permalink: /blog/
           </tr>
           <tr>
             <td></td>
-            <td class="blog-listing-description grey">{{ post.description }}</td>
+            <td class="description grey">{{ post.description }}</td>
           </tr>
 
           <tr class="blank-row">
@@ -30,4 +30,4 @@ permalink: /blog/
     </div>
     <div class="col-xs-0 col-md-2"></div>
   </div>
-</div>
+</section>

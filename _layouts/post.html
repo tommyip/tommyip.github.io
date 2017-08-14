@@ -4,18 +4,12 @@ layout: default
 
 {% include content_tag.html tag="blog" %}
 
-<div class="row side-padded">
-  <div class="col-xs-offset-0 col-sm-offset-2 col-xs-12 col-md-8">
-    <div class="box">
-      <h1>{{ page.title | escape }}</h1>
-      <p class="grey"><i>Written on {{ page.date | date: "%-d %B %Y" }}</i></p>
-    </div>
-  </div>
-</div>
-<div class="row side-padded">
+<section class="row side-padded">
   <div class="col-xs-offset-0 col-sm-offset-2 col-xs-12 col-md-8">
     <p class="box">
+      <h1><b>{{ page.title | escape }}</b></h1>
+      <span class="small">&#187; Written on {{ page.date | date: "%-d %B %Y" }}</span>
       {{ content }}
     </p>
   </div>
-</div>
+</section>
