@@ -98,11 +98,11 @@ hr {
     font-size: 1.2em;
 }
 
-#section-content-tag {
+#content-tag {
     padding: 2em;
 }
 
-#content-tag {
+#content-tag span {
     padding: 0.3em 0.4em;
     background-color: #111;
     color: #fff;
