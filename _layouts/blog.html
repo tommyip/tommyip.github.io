@@ -12,14 +12,14 @@ permalink: /blog/
       <table>
         {% for post in site.posts %}
           <tr id="item">
-            <td class="grey">{{ post.date | date_to_string }}</td>
+            <td class="small">{{ post.date | date_to_string }}</td>
             <td>
               <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
             </td>
           </tr>
           <tr>
             <td></td>
-            <td class="description grey">{{ post.description }}</td>
+            <td class="small">{{ post.description }}</td>
           </tr>
 
           <tr class="blank-row">

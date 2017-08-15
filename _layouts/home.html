@@ -5,9 +5,9 @@ permalink: /
 
 {% include content_tag.html tag="about" %}
 
-<section class="row side-padded">
-  <div class="col-xs-0 col-md-2"></div>
-  <div class="col-xs-12 col-md-5">
+<section class="row side-padded" id="about">
+  <div class="col-xs-0 col-sm-2"></div>
+  <div class="col-xs-12 col-sm-5">
     <div class="box">
       <h2>
         Hi! I am King Ham "Tommy" Ip, a high school student
@@ -23,10 +23,53 @@ permalink: /
       </h4>
     </div>
   </div>
-  <div class="col-xs-12 col-md-3">
+  <div class="col-xs-12 col-sm-3">
     <div class="box">
-      Contact info
+      Profile image
+    </div>
+  </div>
+  <div class="col-xs-0 col-sm-2"></div>
+</section>
+<section class="row side-padded">
+  <div class="col-xs-0 col-md-2"></div>
+  <div class="col-xs-12 col-md-10">
+    <div class="box">
+
     </div>
   </div>
   <div class="col-xs-0 col-md-2"></div>
+</section>
+
+{% include content_tag.html tag="projects" %}
+
+<section class="row side-padded">
+  <div class="col-xs-0 col-sm-2"></div>
+  <div class="col-xs-12 col-sm-4">
+    <div class="box">
+      <div class="block" id="block-rust">
+        <img src="/assets/rust_256.png">
+      </div>
+      <div class="project-desc">
+        <span class="project-title">Rust</span> as contributor
+        <p>
+          Rust is a systems programming language that runs blazingly fast,
+          prevents segfaults, and guarantees thread safety.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <div class="box">
+      <div class="block" id="block-zulip">
+        <img src="/assets/zulip_256.png">
+      </div>
+      <div class="project-desc">
+        <span class="project-title">Zulip</span> as core team member
+        <p>
+          Zulip is a powerful, open source group chat application.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-0 col-sm-2"></div>
 </section>
