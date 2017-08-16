@@ -1,7 +1,9 @@
 title: Tommy Ip
 author: Tommy Ip
 email: hkmp7tommy@gmail.com
-description: Tommy Ip's personal website. About me | projects | blog
+description: |
+    Tommy Ip is a open source advocate and high school student,
+    found more about him and his blog here.
 baseurl: ""
 url: "http://tommyip.me"
 github_username: tommyip
