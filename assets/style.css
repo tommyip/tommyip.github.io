@@ -1,9 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    font-size: 1em;
     font-weight: 300;
-    padding-bottom: 2em;
 
     overflow-x: hidden;
 }
@@ -46,17 +44,26 @@ hr {
 
 .block {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
+    color: white;
+    position: relative;
 }
 
 .block > img {
+    position: relative;
     width: 40%;
     padding: 5%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin: 0 auto;
+}
+
+.block > span {
+    position: absolute;
+    bottom: 0;
+    right: 0.2em;
+    font-weight: 100;
+    font-size: 5em;
 }
 
 #block-rust {
@@ -65,15 +72,6 @@ hr {
 
 #block-zulip {
     background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
-}
-
-.project-desc {
-    margin-top: 0.5em;
-}
-
-.project-title {
-    font-weight: 500;
-    font-size: 1.5em;
 }
 
 /* Header */
