@@ -3,28 +3,29 @@ layout: post
 title: "Hand-written lexer compared to DFA regex-based ones"
 description: |
     Comparison between hand-written, single-regex and multi-regex lexers
-    implemented in Rust.
-date: 2017-08-07
+    implemented in Rust using DFA regex engine.
+date: 2017-08-06
 categories:
     - Lexical analysis
     - Compilers
     - Regex
     - Rust
+comments: true
 ---
 
-In [this][eli-regex-blog] blog post by Eli Bendersky, he compared a hand-written
+In [this][eli-regex-blog] blog post by Eli Bendersky, he compared a handwritten
 lexical analyzer to regex-based ones, with the former showing significant speed
 improvements over the latter (the multi-regex implementation in particular is
-over 5.5x slower then the hand-written version).
+over 5.5x slower than the hand-written version).
 
 The lexers found in the blog post are, however, written in Javascript, which uses
 a regular expression engine based on the technique of backtracking, commonly
-refered as "regexp". The regular expression in theoretical computer science
+referred as "regexp". The regular expression in the theoretical computer science
 sense, on the other hand, is based on Deterministic Finite Automata (DFA). While
 they lack the advanced features found in regexps, they often provide better
 performance.
 
-With that in mind I decided to hack together a few lexers in Rust (which happens
+With that in mind, I decided to hack together a few lexers in Rust (which happens
 to use a DFA based regex library), to find out if the choice of regex engine
 matters in lexer construction. I then benchmarked them lexing a 4.2MB (100k lines)
 randomly generated source file<sup id="a1">[[1]](#f1)</sup>, using
@@ -33,14 +34,14 @@ randomly generated source file<sup id="a1">[[1]](#f1)</sup>, using
 ![Lexer benchmarks]({{site.url}}/assets/lexer_bench.png)
 
 The single-regex implementation is over 3.5x slower than the multi-regex version
-and well over 50x slower compared to the hand written lexer! How could this be?
+and well over 50x slower compared to the handwritten lexer! How could this be?
 My initial thought was that most of the run time is spent compiling the regex,
 but this could not explain why its multi-regex counterpart is still several times
 faster. Furthermore, however expensive the cost of regex compilation is, it
 shouldn't take more than a few milliseconds.
 
-The time difference between the multi-regex and hand-written version, on the hand,
-is quite explainable; Rust iteself is a compiled language with a LLVM backend,
+The time difference between the multi-regex and handwritten version, on the hand,
+is quite explainable; Rust itself is a compiled language with an LLVM backend,
 which contains an extensive suite of optimizers capable of producing tight and
 efficient machine code. The regex engine, however, compiles on the fly - it has
 to make a tradeoff between compilation time and execution speed.
