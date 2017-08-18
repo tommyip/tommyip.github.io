@@ -26,21 +26,13 @@ p {
 hr {
     border: none;
     height: 1px;
-    background-color: #eee;
-}
-
-.grey {
-    color: #555;
-}
-
-.small {
-    color: #555;
-    font-size: 0.9em;
 }
 
 .side-padded {
     padding: 0 2em;
 }
+
+/* Project cards */
 
 .block {
     width: 100%;
@@ -135,6 +127,28 @@ hr {
     background-color: #222;
     color: #fff;
     font-weight: 500;
+}
+
+/* Misc */
+.header-divider {
+    background-color: #eee;
+}
+
+.p-divider {
+    width: 10%;
+    text-align: center;
+    background-color: #bbb;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.grey {
+    color: #555;
+}
+
+.small {
+    color: #555;
+    font-size: 0.9em;
 }
 
 /* Main "Tommy Ip" header */
