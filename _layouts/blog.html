@@ -5,29 +5,24 @@ permalink: /blog/
 
 {% include content_tag.html tag="blog" %}
 
-<section class="row side-padded" id="blog">
+<section class="row side-padded">
   <div class="col-xs-0 col-md-2"></div>
   <div class="col-xs-12 col-md-8">
-    <div class="box">
-      <table>
-        {% for post in site.posts %}
-          <tr id="item">
-            <td class="small">{{ post.date | date_to_string }}</td>
-            <td>
-              <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="small">{{ post.description }}</td>
-          </tr>
-
-          <tr class="blank-row">
-            <td colspan="2"></td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
-    <div class="col-xs-0 col-md-2"></div>
+    <ul class="box timeline">
+      {% for post in site.posts %}
+        <li class="node">
+          <div class="node-date small">{{ post.date | date_to_string }}</div>
+          <div class="node-line">
+            <div class="line"></div>
+            <div class="bubble"></div>
+          </div>
+          <div class="node-content">
+            <a class="post-title" href="{{ post.url }}"><b>{{ post.title }}</b></a>
+            <p class="small">{{ post.description }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
+  <div class="col-xs-0 col-md-2"></div>
 </section>
