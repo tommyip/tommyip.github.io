@@ -31,6 +31,12 @@ hr {
     padding: 0 2em;
 }
 
+.inline-logo {
+    height: 1.75em;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 0.2em; /* Make logo actually vertically middle of line */
+}
 
 /* Project cards */
 
