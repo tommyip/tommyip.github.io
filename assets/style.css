@@ -108,6 +108,10 @@ hr {
     color: #333;
 }
 
+#blog-link:hover {
+    transform: translateY(-1px);
+    text-shadow: 0 2px 2px #ddd;
+}
 
 /* Home : about */
 
