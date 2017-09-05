@@ -58,10 +58,19 @@ hr {
 
 .block>span {
     position: absolute;
-    bottom: 0;
-    right: 0.2em;
+    bottom: 1em;
+    right: 0.5em;
+    line-height: 100%;
+    text-align: right;
+}
+
+.block>span>strong {
     font-weight: 100;
     font-size: 5em;
+}
+
+.block>span>p {
+    font-size: 1.2em;
 }
 
 #block-rust {
