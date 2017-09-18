@@ -5,20 +5,24 @@ layout: default
 {% include content_tag.html tag="blog" %}
 
 <section class="row side-padded">
-  <div class="col-xs-offset-0 col-sm-offset-2 col-xs-12 col-md-8">
+  <div class="col-xs-0 col-md-2"></div>
+  <div class="col-xs-12 col-md-8">
     <p class="box">
       <h1><b>{{ page.title | escape }}</b></h1>
       <span class="small">&#187; Written on {{ page.date | date: "%-d %B %Y" }}</span>
       {{ content }}
     </p>
   </div>
+  <div class="col-xs-0 col-md-2"></div>
 </section>
 
 {% if page.comments %}
   <div class="row side-padded">
-    <div class="col-xs-offset-0 col-sm-offset-2 col-xs-12 col-md-8">
-      <div class="box" id="disqus_thread"></div>
-    </div>
+    <div class="col-xs-0 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+        <div class="box" id="disqus_thread"></div>
+      </div>
+    <div class="col-xs-0 col-md-2"></div>
   </div>
 
   <script>
