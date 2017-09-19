@@ -75,11 +75,19 @@ hr {
 }
 
 #block-rust {
-    background-image: linear-gradient( 135deg, #C2FFD8 10%, #465EFB 100%);
+    background: -webkit-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background:    -moz-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background:     -ms-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background:      -o-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background:         linear-gradient(135deg, #C2FFD8, #465EFB);
 }
 
 #block-zulip {
-    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+    background: -webkit-linear-gradient(135deg, #F97794, #623AA2);
+    background:    -moz-linear-gradient(135deg, #F97794, #623AA2);
+    background:     -ms-linear-gradient(135deg, #F97794, #623AA2);
+    background:      -o-linear-gradient(135deg, #F97794, #623AA2);
+    background:         linear-gradient(135deg, #F97794, #623AA2);
 }
 
 
@@ -109,7 +117,9 @@ hr {
 }
 
 #blog-link:hover {
-    transform: translateY(-1px);
+    transform:         translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -ms-transform:     translateY(-1px);
     text-shadow: 0 2px 2px #ddd;
 }
 
@@ -162,19 +172,27 @@ hr {
 .node-line>.line {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -ms-transform:     translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform:         translateX(-50%);
     width: 2px;
     top: 0;
     height: 120%;
     background: #707070;
-    background: linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background:    -moz-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background:     -ms-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background:      -o-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background:         linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
 }
 
 .node-line>.bubble {
     width: 1.25em;
     height: 1.25em;
     border-radius: 50%;
-    transform: translate(-50%, -25%);
+    -ms-transform:     translate(-50%, -25%);
+    -webkit-transform: translate(-50%, -25%);
+    transform:         translate(-50%, -25%);
     border: 2px solid #EA5455;
     background-color: white;
     position: absolute;
