@@ -35,10 +35,22 @@ hr {
     height: 1.75em;
     display: inline-block;
     vertical-align: middle;
-    padding-bottom: 0.2em; /* Make logo actually vertically middle of line */
+    padding-bottom: 0.2em;
+    /* Make logo actually vertically middle of line */
 }
 
-/* Project cards */
+#content-tag {
+    padding: 2em;
+}
+
+#content-tag span {
+    padding: 0.3em 0.4em;
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Index page project cards */
 
 .block {
     width: 100%;
@@ -76,22 +88,21 @@ hr {
 
 #block-rust {
     background: -webkit-linear-gradient(135deg, #C2FFD8, #465EFB);
-    background:    -moz-linear-gradient(135deg, #C2FFD8, #465EFB);
-    background:     -ms-linear-gradient(135deg, #C2FFD8, #465EFB);
-    background:      -o-linear-gradient(135deg, #C2FFD8, #465EFB);
-    background:         linear-gradient(135deg, #C2FFD8, #465EFB);
+    background: -moz-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background: -ms-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background: -o-linear-gradient(135deg, #C2FFD8, #465EFB);
+    background: linear-gradient(135deg, #C2FFD8, #465EFB);
 }
 
 #block-zulip {
     background: -webkit-linear-gradient(135deg, #F97794, #623AA2);
-    background:    -moz-linear-gradient(135deg, #F97794, #623AA2);
-    background:     -ms-linear-gradient(135deg, #F97794, #623AA2);
-    background:      -o-linear-gradient(135deg, #F97794, #623AA2);
-    background:         linear-gradient(135deg, #F97794, #623AA2);
+    background: -moz-linear-gradient(135deg, #F97794, #623AA2);
+    background: -ms-linear-gradient(135deg, #F97794, #623AA2);
+    background: -o-linear-gradient(135deg, #F97794, #623AA2);
+    background: linear-gradient(135deg, #F97794, #623AA2);
 }
 
-
-/* Header */
+/* Page header */
 
 #header .box {
     display: flex;
@@ -117,34 +128,19 @@ hr {
 }
 
 #blog-link:hover {
-    transform:         translateY(-1px);
+    transform: translateY(-1px);
     -webkit-transform: translateY(-1px);
-    -ms-transform:     translateY(-1px);
+    -ms-transform: translateY(-1px);
     text-shadow: 0 2px 2px #ddd;
 }
 
-/* Home : about */
+/* Index */
 
 #about h2 {
     margin-top: 0;
 }
 
-
-/* Content tag */
-
-#content-tag {
-    padding: 2em;
-}
-
-#content-tag span {
-    padding: 0.3em 0.4em;
-    background-color: #222;
-    color: #fff;
-    font-weight: 500;
-}
-
-
-/* Timeline / Blog listing */
+/* Blog timeline */
 
 .timeline {
     width: 100%;
@@ -172,27 +168,27 @@ hr {
 .node-line>.line {
     position: absolute;
     left: 50%;
-    -ms-transform:     translateX(-50%);
+    -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    transform:         translateX(-50%);
+    transform: translateX(-50%);
     width: 2px;
     top: 0;
     height: 120%;
     background: #707070;
-    background: -webkit-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
-    background:    -moz-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
-    background:     -ms-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
-    background:      -o-linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
-    background:         linear-gradient(to bottom, rgba(70,70,70,0) 0%, rgb(70,70,70) 8%, rgb(70,70,70) 92%, rgba(70,70,70,0) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(70, 70, 70, 0) 0%, rgb(70, 70, 70) 8%, rgb(70, 70, 70) 92%, rgba(70, 70, 70, 0) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(70, 70, 70, 0) 0%, rgb(70, 70, 70) 8%, rgb(70, 70, 70) 92%, rgba(70, 70, 70, 0) 100%);
+    background: -ms-linear-gradient(to bottom, rgba(70, 70, 70, 0) 0%, rgb(70, 70, 70) 8%, rgb(70, 70, 70) 92%, rgba(70, 70, 70, 0) 100%);
+    background: -o-linear-gradient(to bottom, rgba(70, 70, 70, 0) 0%, rgb(70, 70, 70) 8%, rgb(70, 70, 70) 92%, rgba(70, 70, 70, 0) 100%);
+    background: linear-gradient(to bottom, rgba(70, 70, 70, 0) 0%, rgb(70, 70, 70) 8%, rgb(70, 70, 70) 92%, rgba(70, 70, 70, 0) 100%);
 }
 
 .node-line>.bubble {
     width: 1.25em;
     height: 1.25em;
     border-radius: 50%;
-    -ms-transform:     translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
     -webkit-transform: translate(-50%, -25%);
-    transform:         translate(-50%, -25%);
+    transform: translate(-50%, -25%);
     border: 2px solid #EA5455;
     background-color: white;
     position: absolute;
@@ -209,7 +205,6 @@ hr {
 .post-title {
     font-size: 1.25em;
 }
-
 
 /* Misc */
 
@@ -234,7 +229,6 @@ hr {
     font-size: 0.9em;
 }
 
-
 /* Main "Tommy Ip" header */
 
 @supports (mix-blend-mode: lighten) {
@@ -254,10 +248,10 @@ hr {
         bottom: 0;
         left: 0;
         background: -webkit-linear-gradient(135deg, #623AA2, #F97794);
-        background:    -moz-linear-gradient(135deg, #623AA2, #F97794);
-        background:     -ms-linear-gradient(135deg, #623AA2, #F97794);
-        background:      -o-linear-gradient(135deg, #623AA2, #F97794);
-        background:         linear-gradient(135deg, #623AA2, #F97794);
+        background: -moz-linear-gradient(135deg, #623AA2, #F97794);
+        background: -ms-linear-gradient(135deg, #623AA2, #F97794);
+        background: -o-linear-gradient(135deg, #623AA2, #F97794);
+        background: linear-gradient(135deg, #623AA2, #F97794);
         pointer-events: none;
         mix-blend-mode: screen;
     }
